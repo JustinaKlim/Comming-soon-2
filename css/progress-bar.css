@@ -1,0 +1,87 @@
+.progress-bar {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.progress-bar:last-of-type {
+    margin-bottom: 0;
+}
+
+.progress-bar > .texts {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+    .progress-bar > .texts > .label {
+        display: inline-block;
+        float: left;
+        text-transform: capitalize;
+        color: grey;
+        
+    }
+
+    .progress-bar > .texts > .value {
+        display: inline-block;
+        float: right;
+        color: grey;
+    }
+
+.progress-bar > .bar {
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: #ccc;
+}
+
+.progress-bar > .bar > .value {
+    display: inline-block;
+    width: 90%;
+    height: 100%;
+}
+
+    .progress-bar > .bar > .value > .loading {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(71, 83, 255);
+        animation-name: loading;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-delay: 0s;
+        animation-direction: normal;
+        animation-timing-function: linear;
+    }
+    
+
+@keyframes loading {
+    0% {
+        width: 0;
+        background-color: teal;
+    }
+    50% {
+        width: 100%;
+        background-color: rgb(255, 231, 16);
+    }
+    100% {
+        width: 100%;
+        background-color: violet;
+    }
+}
+
+/*
+
+    .progress-bar > .bar > .value.value-90 {
+    width: 90%;
+}
+
+.progress-bar > .bar > .value.value-86 {
+    width: 86%;
+}
+
+.progress-bar > .bar > .value.value-50 {
+    width: 50%;
+}
+
+*/
